@@ -1,0 +1,16 @@
+Follow this tutorial to flash image on SD card: http://wiki.seeedstudio.com/ReSpeaker_Core_v2.0/#getting-started
+Plug USB to "OTG" micro usb port on respeaker and to your linux machine
+Execute following commands
+    sudo apt-get install screen -y
+    ls /dev/ttyACM*
+        /dev/ttyACM0
+    sudo screen /dev/ttyACM0 115200
+That will get you to shell
+    #Connect to WiFi
+        sudo nmtui
+            Connect to wifi with that utility
+        ping google.com
+            Just to make sure connectivity is available
+    #Update system
+        sudo apt-get update
+        sudo apt-get upgrade -y
